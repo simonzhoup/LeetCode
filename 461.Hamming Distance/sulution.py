@@ -26,3 +26,10 @@ from collections import Counter
 def solution(x, y):
     '''先使用位运算符 ^：当两对应的二进位相异时，结果为1，然后用Counter 方法计算1的次数'''
     return Counter(bin(x ^ y))['1']
+
+'''或者'''
+
+
+def solution_B(x, y):
+    '''直接使用字符串的count() 方法， 计算指定元素的个数'''
+    return bin(x ^ y).dount('1')
