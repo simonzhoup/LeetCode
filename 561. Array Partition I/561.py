@@ -15,3 +15,9 @@ All the integers in the array will be in the range of [-10000, 10000].
 def sulotion(nums):
     nums.sort()
     return sum([nums[i] for i in range(0, len(nums), 2)])
+
+# 简化
+
+
+def sulotion(nums):
+    return sum(sorted(nums)[::2])
