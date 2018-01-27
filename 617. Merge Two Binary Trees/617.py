@@ -20,6 +20,7 @@ Merged tree:
 	 5   4   7
 Note: The merging process must start from the root nodes of both trees.
 '''
+from pythonds.trees.binaryTree import BinaryTree
 
 
 def mergeTrees(t1, t2):
@@ -34,3 +35,5 @@ def mergeTrees(t1, t2):
     ans.left = mergeTrees(t1 and t1.left, t2 and t2.left)
     ans.right = mergeTrees(t1 and t1.right, t2 and t2.right)
     return ans
+
+print(mergeTrees([1, 3, 2, 5], [2, 1, 3, null, 4, null, 7]))
